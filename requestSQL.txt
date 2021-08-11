@@ -1,0 +1,6 @@
+Запрос SQL
+select Products.Name, Categories.Name from Products
+left join ProductCategories
+on ProductCategories.ProductId = Products.Id
+left join Categories
+on ProductCategories.CategoryId = Categories.Id
